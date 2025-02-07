@@ -60,6 +60,42 @@ footer {
   transform: scale(1.1);
 }
 
-img {
-  height: 100%;
+.user {
+  width: 60px;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.176);
+}
+
+@media screen and (max-width: 768px) {
+  .userSettings {
+    width: 100%;
+  }
+}
+
+.languages {
+  width: 120px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 1.5em;
+  height: 1.5em;
+  border: 0.1em solid white;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.pencilUser {
+  width: 20%;
+  height: 20%;
+  bottom: 10px;
+  left: 10px;
+  padding: 5px;
+  &:hover {
+    cursor: pointer;
+  }
 }

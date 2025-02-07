@@ -50,11 +50,11 @@ class Gallery extends Component {
             <span className="visually-hidden">Loading...</span>
           </Spinner>
         )}
-        <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-6 mb-4 mx-5 px-5">
+        <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-6 mb-4 px-5">
           {this.state.movies.slice(0, 6).map((movie) => {
             return (
-              <Col className="mb-2 text-center p-0 mx-0" key={movie.imdbID}>
-                <img src={movie.Poster} alt={movie.Title} />
+              <Col className="mb-2 text-center p-0 px-1" key={movie.imdbID}>
+                <img className="img-fluid w-100" src={movie.Poster} alt={movie.Title} />
               </Col>
             );
           })}
