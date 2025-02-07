@@ -43,14 +43,14 @@ class Gallery extends Component {
 
   render() {
     return (
-      <Container fluid>
+      <Container fluid className=" px-5">
         <h2 className="my-5 fs-1 text-white">{this.props.saga}</h2>
         {this.state.isLoading && (
           <Spinner animation="border" role="status" variant="primary" className="d-block mx-auto">
             <span className="visually-hidden">Loading...</span>
           </Spinner>
         )}
-        <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-6 mb-4 px-5">
+        <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-6 mb-4">
           {this.state.movies.slice(0, 6).map((movie) => {
             return (
               <Col className="mb-2 text-center p-0 px-1" key={movie.imdbID}>

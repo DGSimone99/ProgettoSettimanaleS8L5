@@ -5,13 +5,13 @@ import { BsFillQuestionCircleFill, BsGear } from "react-icons/bs";
 const TopBar = () => {
   return (
     <Navbar expand="lg" variant="dark" className="navBar">
-      <Container fluid>
+      <Container fluid className=" px-5">
         <Navbar.Brand href="#">
           <img src="assets/logo.png" alt="Logo" style={{ width: "100px", height: "55px" }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarSupportedContent" />
         <Navbar.Collapse id="navbarSupportedContent">
-          <Nav className="me-auto mb-2 mb-lg-0">
+          <Nav className="me-auto mb-2 mb-lg-0 ">
             <Nav.Link href="#" className="fw-bold active">
               Home
             </Nav.Link>

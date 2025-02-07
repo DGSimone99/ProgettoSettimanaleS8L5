@@ -48,7 +48,8 @@ body,
 
 .col img {
   transition: transform 0.2s;
-  max-height: 400px;
+  object-fit: cover;
+  height: 100%;
 }
 
 .col img:hover {
