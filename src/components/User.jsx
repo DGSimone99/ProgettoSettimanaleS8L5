@@ -3,14 +3,14 @@ import { BsPencilFill } from "react-icons/bs";
 
 const User = (props) => {
   return (
-    <Container className="text-white">
-      <div className="container userSettings w-50">
+    <Container className="text-white pb-3">
+      <div className="container userSettings">
         <h1>Edit Profile</h1>
         <hr />
         <Row className="d-flex">
           <Col className="me-4 col-3">
             <div className="position-relative">
-              <Image src={props.img} alt="Avatar" fluid class="rounded-2 img-fluid" />
+              <Image src={props.img} alt="Avatar" fluid className="rounded-2 img-fluid" />
               <BsPencilFill className="position-absolute pencilUser bg-black border border-white rounded-circle"></BsPencilFill>
             </div>
           </Col>
@@ -51,14 +51,17 @@ const User = (props) => {
           </Col>
         </Row>
         <hr className="my-4" />
-        <Row className="d-flex">
-          <Button variant="light" className="col-3 rounded-0 px-5 text-dark fs-5 fw-bold">
+        <Row>
+          <Button variant="light" className="col-12 col-md-3 rounded-0 text-dark fs-5 fw-bold userBtn">
             SAVE
           </Button>
-          <Button variant="outline-secondary" className="col-3 rounded-0 px-4 mx-4 fs-5">
+          <Button
+            variant="outline-secondary"
+            className="col-12 col-md-3 rounded-0 my-3 my-md-0 fs-5 userBtn mx-0 mx-md-2 mx-lg-3"
+          >
             CANCEL
           </Button>
-          <Button variant="outline-secondary" className="col-5 rounded-0 px-4 fs-5">
+          <Button variant="outline-secondary" className="col-12 col-md-5 rounded-0 fs-5 userBtn">
             DELETE PROFILE
           </Button>
         </Row>

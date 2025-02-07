@@ -12,17 +12,17 @@ function App() {
   return (
     <div>
       <TopBar />
-      {/* <div id="home">
+      <div id="home">
         <Gallery movies="Alien" saga="Alien" />
         <Gallery movies="Pirates" saga="Pirates of the Caribbean + Extra" />
         <Gallery movies="Spider-Man" saga="Spider-Man" />
       </div>
-      <div id="user">
+      {/* <div id="user">
         <User img={userImg} name={userName} />
       </div> */}
-      <div id="settings">
+      {/* <div id="settings">
         <Settings img={userImg} name={userName} />
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

@@ -44,7 +44,7 @@ class Gallery extends Component {
   render() {
     return (
       <Container fluid>
-        <h2 className="my-5 fs-1">{this.props.saga}</h2>
+        <h2 className="my-5 fs-1 text-white">{this.props.saga}</h2>
         {this.state.isLoading && (
           <Spinner animation="border" role="status" variant="primary" className="d-block mx-auto">
             <span className="visually-hidden">Loading...</span>
