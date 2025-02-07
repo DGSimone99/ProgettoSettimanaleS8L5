@@ -1,13 +1,7 @@
-body {
-  background-color: #221f1f;
+body,
+.navBar {
+  background-color: #141414;
 }
-
-h2,
-h4,
-footer {
-  color: #f5f5f1;
-}
-
 .icons {
   margin-left: 0.8em;
   margin-right: 0.8em;
@@ -98,4 +92,17 @@ footer {
   &:hover {
     cursor: pointer;
   }
+}
+
+.settings {
+  width: 60%;
+}
+@media screen and (max-width: 1024px) {
+  .settings {
+    width: 90%;
+  }
+}
+
+.settingsImg {
+  width: 50px;
 }

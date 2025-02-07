@@ -1,7 +1,7 @@
 import { Container, Row, Col, Image, Form, Button } from "react-bootstrap";
 import { BsPencilFill } from "react-icons/bs";
 
-const User = () => {
+const User = (props) => {
   return (
     <Container className="text-white">
       <div className="container userSettings w-50">
@@ -10,12 +10,12 @@ const User = () => {
         <Row className="d-flex">
           <Col className="me-4 col-3">
             <div className="position-relative">
-              <Image src="../assets/User.jpg" alt="Avatar" fluid class="rounded-2 img-fluid" />
+              <Image src={props.img} alt="Avatar" fluid class="rounded-2 img-fluid" />
               <BsPencilFill className="position-absolute pencilUser bg-black border border-white rounded-circle"></BsPencilFill>
             </div>
           </Col>
           <Col>
-            <p className="name fs-3 bg-secondary px-3">Strive Student</p>
+            <p className="name fs-3 bg-secondary px-3">{props.name}</p>
             <h3 className="fs-4">Language:</h3>
             <Form.Group>
               <Form.Select className="bg-black border border-1 rounded-0 text-white px-2 py-1 languages fs-5">

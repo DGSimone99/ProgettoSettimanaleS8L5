@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="mt-5">
       <Container>
         <Row className="justify-content-center">
-          <Col xs={12} md={6}>
+          <Col className="col-xs-12 col-md-6">
             <Row>
               <Col className="mb-2">
                 <BiLogoFacebook className="footer-icon me-2" size={24} />

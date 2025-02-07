@@ -1,10 +1,10 @@
-import { Navbar, Nav, Container, Collapse, Form, Button, Dropdown } from "react-bootstrap";
+import { Navbar, Nav, Container, Button, Dropdown } from "react-bootstrap";
 import { BiBell, BiSearch, BiUserCircle } from "react-icons/bi";
 import { BsFillQuestionCircleFill, BsGear } from "react-icons/bs";
 
 const TopBar = () => {
   return (
-    <Navbar expand="lg" variant="dark">
+    <Navbar expand="lg" variant="dark" className="navBar">
       <Container fluid>
         <Navbar.Brand href="#">
           <img src="assets/logo.png" alt="Logo" style={{ width: "100px", height: "55px" }} />
@@ -29,19 +29,9 @@ const TopBar = () => {
             </Nav.Link>
           </Nav>
           <div className="d-flex align-items-center gap-3">
-            <Button variant="dark" className="text-white" aria-controls="searchBar" aria-expanded={open}>
-              <BiSearch />
+            <Button variant="dark" className="text-white bg-transparent border-0">
+              <BiSearch size={24} />
             </Button>
-            <Collapse in={open} dimension="width">
-              <div id="searchBar">
-                <Form.Control
-                  type="search"
-                  placeholder="Search"
-                  className="bg-black border-0 p-1 mt-2"
-                  aria-label="Search"
-                />
-              </div>
-            </Collapse>
             <a href="#" className="text-decoration-none">
               <span className="fw-bold text-light">KIDS</span>
             </a>
